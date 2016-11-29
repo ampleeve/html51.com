@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        window.onload = function () {
+            //var div = window.document.body.children[0];
+            //console.log(div);
+            //var span2 = div.children[1];
+            //span2.myProperty = 1000;
+            var span2 = document.getElementById('s2');
+            span2.style.color = 'red';
+            span2.style.fontSize = '40px';
+            var span3 = document.getElementById('s3');
+            span3.style.color = 'green';
+            span3.style.fontSize = '30px';
+            var span4 = document.getElementById('s4');
+            span4.style.color = 'yellow';
+            span4.style.fontSize = '60px';
+            var span5 = document.getElementById('s5');
+            span5.style.color = '#ffaf33';
+            span5.style.fontSize = '55px';
+            var span6 = document.getElementById('s6');
+            span6.style.color = '#afaf33';
+            span6.style.fontSize = '25px';
+            //print_r(span2);
+        }
+        function print_r(obj) {
+
+            var s = '<h1>' + obj + '</h1>';
+
+            s += '<ol>';
+
+            for (var p in obj)
+                s += '<li><b>' + p + '</b> : ' + obj[p] + '</li>';
+            s += '</ol>';
+            window.document.body.innerHTML = s;
+
+        }
+    </script>
+
+</head>
+<body>
+<div>
+    <span>G</span>
+    <span id="s2">I</span>
+    <span id="s3">L</span>
+    <span id="s4">E</span>
+    <span id="s5">S</span>
+    <span id="s6">O</span>
+    <span>N</span>
+</div>
+</body>
+</html>

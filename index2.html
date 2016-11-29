@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        window.onload = function () {
+            //var div = window.document.body.children[0];
+            //console.log(div);
+            //var span2 = div.children[1];
+            //span2.myProperty = 1000;
+            var span2 = document.getElementById('s2');
+            span2.style.color = 'red';
+            span2.style.fontSize = '40px';
+            print_r(span2.style);
+        }
+        function print_r(obj) {
+
+            var s = '<h1>' + obj + '</h1>';
+
+            s += '<ol>';
+
+            for (var p in obj)
+                s += '<li><b>' + p + '</b> : ' + obj[p] + '</li>';
+            s += '</ol>';
+            window.document.body.innerHTML = s;
+
+        }
+    </script>
+
+</head>
+<body>
+<div>
+    <span>one</span>
+    <span id="s2">two</span>
+</body>
+</html>

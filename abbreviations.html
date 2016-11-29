@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    div#id_header.header1.main[title="'Это заголовок"]
+    <div id="id_header" class="header1 main" title="'Это заголовок"></div>
+
+    .header
+    <div class="header"></div>
+
+    ul>li*5>a.class1
+    <ul>
+        <li><a href="" class="class1"></a></li>
+        <li><a href="" class="class1"></a></li>
+        <li><a href="" class="class1"></a></li>
+        <li><a href="" class="class1"></a></li>
+        <li><a href="" class="class1"></a></li>
+    </ul>
+
+    ul>li*5>a.class$
+    <ul>
+        <li><a href="" class="class1"></a></li>
+        <li><a href="" class="class2"></a></li>
+        <li><a href="" class="class3"></a></li>
+        <li><a href="" class="class4"></a></li>
+        <li><a href="" class="class5"></a></li>
+    </ul>
+
+    .wrapper>(#header>ul.nav>li*4>a)+(#page>h1>p*2)+#footer
+    <div class="wrapper">
+        <div id="header">
+            <ul class="nav">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <div id="page">
+            <h1>
+                <p></p>
+                <p></p>
+            </h1>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    table>tr*4>td.class*3
+    <table>
+        <tr>
+            <td class="class"></td>
+            <td class="class"></td>
+            <td class="class"></td>
+        </tr>
+        <tr>
+            <td class="class"></td>
+            <td class="class"></td>
+            <td class="class"></td>
+        </tr>
+        <tr>
+            <td class="class"></td>
+            <td class="class"></td>
+            <td class="class"></td>
+        </tr>
+        <tr>
+            <td class="class"></td>
+            <td class="class"></td>
+            <td class="class"></td>
+        </tr>
+    </table>
+
+    <ul>
+        <li><a href="http://yandex.ru" class="class">Слон</a></li>
+        <li><a href="http://yandex.ru" class="class">Попугай</a></li>
+        <li><a href="http://yandex.ru" class="class">Черепаха</a></li>
+        <li><a href="http://yandex.ru" class="class">Змея</a></li>
+        <li><a href="http://yandex.ru" class="class">Тигр</a></li>
+        <li><a href="http://yandex.ru" class="class">Бегемот</a></li>
+    </ul>
+
+</body>
+</html>
